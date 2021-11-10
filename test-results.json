@@ -1,0 +1,80 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 1,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 2,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 2,
+  "numTotalTests": 3,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1636524238116,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Sample Test File 2"],
+          "failureMessages": [],
+          "fullName": "Sample Test File 2 should return 200 when a file is uploaded",
+          "location": null,
+          "status": "passed",
+          "title": "should return 200 when a file is uploaded"
+        }
+      ],
+      "endTime": 1636524239662,
+      "message": "",
+      "name": "/home/sfwon445/workspace/jest-test-2/app2.spec.ts",
+      "startTime": 1636524238292,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Sample Test Suite 1"],
+          "failureMessages": [],
+          "fullName": "Sample Test Suite 1 should return 400 when no file is uploaded",
+          "location": null,
+          "status": "passed",
+          "title": "should return 400 when no file is uploaded"
+        },
+        {
+          "ancestorTitles": ["Sample Test Suite 1"],
+          "failureMessages": [
+            "Error: expected 200 \"OK\", got 400 \"Bad Request\"\n    at /home/sfwon445/workspace/jest-test-2/app.spec.ts:40:36\n    at step (/home/sfwon445/workspace/jest-test-2/app.spec.ts:33:23)\n    at Object.next (/home/sfwon445/workspace/jest-test-2/app.spec.ts:14:53)\n    at fulfilled (/home/sfwon445/workspace/jest-test-2/app.spec.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n----\n    at Test.Object.<anonymous>.Test._assertStatus (/home/sfwon445/workspace/jest-test-2/node_modules/.pnpm/supertest@6.1.6/node_modules/supertest/lib/test.js:304:12)\n    at /home/sfwon445/workspace/jest-test-2/node_modules/.pnpm/supertest@6.1.6/node_modules/supertest/lib/test.js:80:15\n    at Test.Object.<anonymous>.Test._assertFunction (/home/sfwon445/workspace/jest-test-2/node_modules/.pnpm/supertest@6.1.6/node_modules/supertest/lib/test.js:338:11)\n    at Test.Object.<anonymous>.Test.assert (/home/sfwon445/workspace/jest-test-2/node_modules/.pnpm/supertest@6.1.6/node_modules/supertest/lib/test.js:209:21)\n    at Server.localAssert (/home/sfwon445/workspace/jest-test-2/node_modules/.pnpm/supertest@6.1.6/node_modules/supertest/lib/test.js:167:12)\n    at Object.onceWrapper (node:events:509:28)\n    at Server.emit (node:events:390:28)\n    at emitCloseNT (node:net:1666:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"
+          ],
+          "fullName": "Sample Test Suite 1 should return 200 when a file is uploaded",
+          "location": null,
+          "status": "failed",
+          "title": "should return 200 when a file is uploaded"
+        }
+      ],
+      "endTime": 1636524239720,
+      "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSample Test Suite 1 › should return 200 when a file is uploaded\u001b[39m\u001b[22m\n\n    expected 200 \"OK\", got 400 \"Bad Request\"\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 38 |\u001b[39m     \u001b[36mconst\u001b[39m module \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mimport\u001b[39m(\u001b[32m'./app'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 39 |\u001b[39m     \u001b[36mconst\u001b[39m app \u001b[33m=\u001b[39m module\u001b[33m.\u001b[39m\u001b[36mdefault\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m supertest(app)\u001b[33m.\u001b[39mpost(\u001b[32m'/'\u001b[39m)\u001b[33m.\u001b[39mexpect(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 41 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 42 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 43 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2m\u001b[0m\u001b[36mapp.spec.ts\u001b[39m\u001b[0m\u001b[2m:40:36\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat step (\u001b[22m\u001b[2m\u001b[0m\u001b[36mapp.spec.ts\u001b[39m\u001b[0m\u001b[2m:33:23)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.next (\u001b[22m\u001b[2m\u001b[0m\u001b[36mapp.spec.ts\u001b[39m\u001b[0m\u001b[2m:14:53)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat fulfilled (\u001b[22m\u001b[2m\u001b[0m\u001b[36mapp.spec.ts\u001b[39m\u001b[0m\u001b[2m:5:58)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      ----\u001b[22m\n",
+      "name": "/home/sfwon445/workspace/jest-test-2/app.spec.ts",
+      "startTime": 1636524238292,
+      "status": "failed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}
